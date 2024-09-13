@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	threesum "leetcode-go/threesum"
 	twosum "leetcode-go/twosum"
 )
 
@@ -11,4 +12,9 @@ func main() {
 	result := twosum.TwoSum(nums, target)
 	fmt.Printf("Two Sum - Input: nums = %v, target = %d\n", nums, target)
 	fmt.Printf("Two Sum - Output: %v\n", result)
+
+	nums3 := []int{-1, 0, 1, 2, -1, -4}
+	result3 := threesum.ThreeSum(nums3)
+	fmt.Printf("Three Sum - Input: nums = %v\n", nums3)
+	fmt.Printf("Three Sum - Output: %v\n", result3)
 }
